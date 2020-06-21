@@ -18,7 +18,7 @@
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Sort.cpp">
+    <ClCompile Include="Sort.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
