@@ -4,8 +4,8 @@
 #include<stdio.h>
 
 //change solution here
-#define SORT BubbleSort
-#define LEN 1700
+#define SORT InsertSort
+#define LEN 10
 
 int main()
 {
