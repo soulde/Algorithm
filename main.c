@@ -1,11 +1,10 @@
 #include"Sort.h"
-#include<stdlib.h>
-#include<time.h>
+
 #include<stdio.h>
 
 //change solution here
-#define SORT InsertSort
-#define LEN 10
+#define SORT ShellSort
+#define LEN 30
 
 int main()
 {

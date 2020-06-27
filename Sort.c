@@ -82,7 +82,31 @@ void InsertSort(int* List, int num)
 	}
 }
 
-void HillSort(int* List, int num)
+void ShellSort(int* List, int num)
+{
+	int increasement = num;
+	int j =0,temp =0;
+	do
+	{
+		
+		increasement = increasement / 3 + 1;
+		for (int i = 0; i < num - increasement ; i++)
+		{
+			if (List[i + increasement] < List[i])
+			{
+				temp = List[i + increasement];
+				for (j = i; j >= 0 && temp < List[j]; j -= increasement)
+				{
+					List[j + increasement] = List[j];
+				}
+				List[j + increasement] = temp;
+			}
+			
+		}
+	} while (increasement > 1);
+}
+
+void HeapSort(int* List, int num)
 {
 
 }

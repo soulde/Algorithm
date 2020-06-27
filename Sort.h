@@ -14,4 +14,6 @@ void SelectSort(int* List, int num);
 
 void InsertSort(int* List, int num);
 
-void HillSort(int* List, int num);
+void ShellSort(int* List, int num);
+
+void HeapSort(int* List, int num);
