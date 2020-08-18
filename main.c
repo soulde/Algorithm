@@ -3,17 +3,18 @@
 #include<stdio.h>
 
 //change solution here
-#define SORT ShellSort
-#define LEN 30
+#define SORT HeapSort
+#define LEN 20
+
+int testlist[LEN] = { 0 };
 
 int main()
 {
 	//init the list
 	srand(time(0));
-	int testlist[LEN] = {0};
 	for (int i = 0; i < LEN; i++)
 	{
-		*(testlist + i) = rand();
+		*(testlist + i) = rand()%(7*LEN);
 	}
 
 	//show before sort
