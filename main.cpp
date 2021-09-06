@@ -1,6 +1,6 @@
 #include"Sort.h"
+#include "component.h"
 
-#include<stdio.h>
 
 //change solution here
 #define SORT HeapSort
@@ -23,7 +23,7 @@ int main()
 	printf_s("\n");
 
 	//sort
-	double durtime = duration(SORT, testlist, LEN);
+	double durtime = duration<int>(SORT<int>, testlist, LEN);
 
 	//show after sort
 	show(testlist,LEN);

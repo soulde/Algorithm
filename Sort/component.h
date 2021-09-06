@@ -10,7 +10,7 @@
 #include "Node.h"
 
 template<typename T>
-double duration(void function(T *list, int num), T *list, size_t num) {
+double duration(void function(T *list, size_t num), T *list, size_t num) {
     clock_t start, end;
 
     start = clock();
